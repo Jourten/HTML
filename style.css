@@ -1,0 +1,265 @@
+body {
+    max-width: 1200px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 15px;
+    background-color: #f4f2f8;
+    color: #333;
+    margin:auto;
+    overflow: auto;
+}
+
+.menu {
+    position: sticky;     
+    top: 10px;                
+    z-index: 1000;       
+    
+    background-color: white;
+    border: 2px solid rgb(160, 108, 209);
+    border-radius: 15px;
+    margin: 2% 3%;
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+.menu a {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+header {
+    margin: 3%;
+    padding: 3% 5%;
+    border: 2px solid rgb(160, 108, 209);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+header h6{
+    color:#8254a3;
+}
+#imagenpersonal {
+    margin-left: 30px;
+}
+
+#imagenpersonal img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #8254a3;
+}
+
+img{
+    width: 30%;
+    height: 30%;
+
+}
+
+.main{
+    margin-top: 5%;
+    margin: 3%;
+
+}
+.main h3{
+    text-transform: uppercase;   
+}
+.main ul li{
+    margin:10px;
+
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    overflow: hidden; /* para que el borde redondeado funcione */
+}
+
+/* Encabezados */
+table thead {
+    background-color: #8254a3;
+    color: white;
+}
+
+table thead th {
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+
+/* Celdas */
+table tbody td {
+    padding: 10px 12px;
+}
+
+/* Alternar color de filas */
+table tbody tr:nth-child(1) {
+    background-color: #a177c0;
+}
+table tbody tr:nth-child(2) {
+    background-color:  #b48cd1;
+}
+
+/* Hover */
+table tbody tr:hover {
+    background-color: #ebe0ff;
+}
+
+.anidada{
+    list-style-type:none;
+    font-size: 12px;
+
+}
+main h3{
+    text-transform:uppercase;
+
+}
+main section{
+    margin-bottom: 5%;
+
+}
+#proyectos{
+    border: 2px solid rgb(160, 108, 209);
+    border-radius: 10px;
+    padding: 3% 5%;
+}
+#proyectos h3{
+    background-color: rgb(160, 108, 209);
+    border: solid 1px rgb(160, 108, 209);
+    border-radius: 2px;
+    padding-left: 2px;
+    color: #ddd;
+
+}
+#proyectos h4{
+    border-bottom: 3px solid rgb(160, 108, 209);
+    padding-bottom: 6px;
+}
+.columnas{
+    column-count: 2;
+    column-gap: 50%;
+    padding-top: 1rem;
+
+}
+.columnas li{
+    break-inside: avoid;
+}
+main .columnas{
+    column-rule: 5px dotted #51ad61;
+}
+
+footer{
+    color:azure;
+    border-style: solid;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 0%;
+    background-color: #727272;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 100% 100%;
+
+}
+footer a{
+    color:#51ad61;
+}
+footer li{
+    color:rgb(245, 81, 223);
+    list-style: none;
+}
+footer li::before{
+    content: "\F2E3";
+    font-family: "bootstrap-icons";
+}
+a{
+    text-decoration: none;
+    color:#8254a3;
+}
+a:hover{
+    font-size: larger;
+    text-decoration: underline;
+
+}
+/*
+----------------------------------
+----------------------------------
+AQUÍ EMPIEZA EL CSS DEL FORMULARIO
+----------------------------------
+----------------------------------
+*/
+.form-section h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #8254a3;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    padding: 30px 40px;
+    background-color: white;
+    border: 2px solid rgb(160, 108, 209);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #b48cd1;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #8254a3;
+    box-shadow: 0 0 5px rgba(130, 84, 163, 0.4);
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px;
+    width: 100%;
+    background-color: #8254a3;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: rgb(160, 108, 209);
+    transform: scale(1.02);
+}
